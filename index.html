@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daLoadMaster (Digital Freight Marketplace)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/carousel-2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .role-card {
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .role-card:hover {
+            transform: translateY(-5px);
+        }
+        .dashboard-preview img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .mobile-app img {
+            max-height: 500px;
+            object-fit: contain;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #007bff;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">daLoadMaster (Digital Freight Marketplace)</a> -->
+            <img src="assets/images/logos/logo-no-background.png" width="10%"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="https://app.daloadmaster.com">Try it out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Revolutionizing Third Party Logistics</h1>
+            <p class="lead">Streamline your operations across Ghana and Africa</p>
+            <a href="https://app.daloadmaster.com" class="btn btn-primary btn-lg mt-3">Try it out</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">About Our Mission</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>In the rapidly evolving landscape of African logistics, inefficiencies in trucking operations have long been a bottleneck for economic growth and regional integration. The daLoadMaster (Digital Freight Marketplace) aims to address these challenges head-on.</p>
+                    <h3 class="h5 mt-4">The Problem We're Solving:</h3>
+                    <ul>
+                        <li>Fragmented logistics networks leading to underutilized capacity</li>
+                        <li>Lack of real-time visibility in shipment tracking</li>
+                        <li>Inefficient manual processes in booking and managing freight</li>
+                        <li>Limited access to data for informed decision-making</li>
+                        <li>Challenges in cross-border logistics and compliance</li>
+                    </ul>
+                    <p>Our platform connects shippers, carriers, and other stakeholders in a seamless digital ecosystem, optimizing operations, reducing costs, and fostering sustainable practices in the trucking industry across Ghana and Africa.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/trucks-minibuses-located-inside-ferryboat-greece.jpg" alt="African Logistics" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="assets/images/dashboard3.png" class="card-img-top" alt="Online Booking">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-tasks me-2 text-primary"></i>Online Booking</h5>
+                            <p class="card-text">Effortlessly manage shipments and book trucking services online.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="assets/images/dashboard9.jpg" class="card-img-top" alt="Real-Time Tracking">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-map-marked-alt me-2 text-primary"></i>Real-Time Tracking</h5>
+                            <p class="card-text">Monitor shipment progress and location in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="assets/images/dashboard1.png" class="card-img-top" alt="Analytics">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-chart-line me-2 text-primary"></i>Analytics</h5>
+                            <p class="card-text">Gain insights with comprehensive performance analytics and reporting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Roles Section -->
+     <section id="roles" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Role Features</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card role-card shadow">
+                        <img src="assets/images/organizations.jpg" class="card-img-top" alt="Organizations">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-building me-2 text-primary"></i>Organizations</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Optimize operations</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Reduce costs</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Improve efficiency</li>
+                            </ul>
+                            <a href="https://fm.addxt.com/form/?vf=1FAIpQLScwpSlWFw_412UKtjxI_pq6m3vw1T9ZUzzim0xGVCxm9qDJLA" target="_blank" class="btn btn-primary btn-sm">Join Organization Waitlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card role-card shadow">
+                        <img src="assets/images/senders.jpg" class="card-img-top" alt="Senders">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-box me-2 text-primary"></i>Senders</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Easy shipment booking</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Real-time tracking</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Transparent pricing</li>
+                            </ul>
+                            <a href="https://fm.addxt.com/form/?vf=1FAIpQLScwpSlWFw_412UKtjxI_pq6m3vw1T9ZUzzim0xGVCxm9qDJLA" target="_blank" class="btn btn-primary btn-sm">Join Sender Waitlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card role-card shadow">
+                        <img src="assets/images/brokers.jpg" class="card-img-top" alt="Brokers">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-handshake me-2 text-primary"></i>Brokers</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Expanded network</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Efficient matching</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Increased revenue</li>
+                            </ul>
+                            <a href="https://fm.addxt.com/form/?vf=1FAIpQLScwpSlWFw_412UKtjxI_pq6m3vw1T9ZUzzim0xGVCxm9qDJLA" target="_blank" class="btn btn-primary btn-sm">Join Broker Waitlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card role-card shadow">
+                        <img src="assets/images/drivers.jpg" class="card-img-top" alt="Drivers">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-truck me-2 text-primary"></i>Drivers</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Optimized routes</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Reduced empty miles</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Improved earnings</li>
+                            </ul>
+                            <a href="https://fm.addxt.com/form/?vf=1FAIpQLScwpSlWFw_412UKtjxI_pq6m3vw1T9ZUzzim0xGVCxm9qDJLA" target="_blank" class="btn btn-primary btn-sm">Join Driver Waitlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section id="dashboard" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Intuitive Dashboard</h2>
+            <div id="dashboardCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/dashboard6.jpg" class="d-block w-100" alt="Dashboard Overview">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dashboard Overview</h5>
+                            <p>Get a bird's-eye view of your logistics operations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/images/dashboard7.jpg" class="d-block w-100" alt="Dashboard Overview">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dashboard Overview</h5>
+                            <p>Get a bird's-eye view of your logistics operations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/images/dashboard8.jpg" class="d-block w-100" alt="Dashboard Overview">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dashboard Overview</h5>
+                            <p>Get a bird's-eye view of your logistics operations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/images/dashboard9.jpg" class="d-block w-100" alt="Dashboard Overview">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dashboard Overview</h5>
+                            <p>Get a bird's-eye view of your logistics operations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/dashboard2.png" class="d-block w-100" alt="Shipment Tracking">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Shipment Tracking</h5>
+                            <p>Monitor your shipments in real-time</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/dashboard3.png" class="d-block w-100" alt="Analytics Dashboard">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Analytics Dashboard</h5>
+                            <p>Gain insights from comprehensive data analysis</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/dashboard4.png" class="d-block w-100" alt="Analytics Dashboard">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Analytics Dashboard</h5>
+                            <p>Gain insights from comprehensive data analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section id="mobile-app" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Mobile App</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Manage Your Logistics On-the-Go</h3>
+                    <p>Our powerful mobile app puts the full capabilities of the daLoadMaster (Digital Freight Marketplace) in your pocket. Whether you're an organization, sender, broker, or driver, you can manage your logistics operations from anywhere, at any time.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Real-time shipment tracking</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Instant notifications</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Mobile booking and management</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Secure communication</li>
+                    </ul>
+                    <!-- <div class="mt-4">
+                        <a href="#" class="btn btn-primary me-2">
+                            <i class="fab fa-google-play me-2"></i>Google Play
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fab fa-apple me-2"></i>App Store
+                        </a>
+                    </div> -->
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6 mobile-app">
+                            <img src="assets/images/phone2.jpeg" class="img-fluid rounded shadow" alt="Mobile App Screen 1">
+                        </div>
+                        <div class="col-6 mobile-app">
+                            <img src="assets/images/phone4.jpeg" class="img-fluid rounded shadow" alt="Mobile App Screen 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to transform your logistics?</h2>
+            <a href="#roles" class="btn btn-light btn-lg">Choose Your Role</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3 font-weight-bold">About Us</h5>
+                    <p>daLoadMaster (Digital Freight Marketplace) is revolutionizing logistics across Ghana and Africa, providing innovative solutions for efficient and sustainable transportation.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3 font-weight-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#features" class="text-white">Features</a></li>
+                        <li><a href="#mobile-app" class="text-white">Mobile App</a></li>
+                        <li><a href="#roles" class="text-white">Roles</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3 font-weight-bold">Contact Us</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@daloadmaster.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +233 26 897 7129</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 daLoadMaster (Digital Freight Marketplace). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
